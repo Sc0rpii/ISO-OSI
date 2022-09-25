@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Il modello ISO/OSI</title>
+</head>
+<body>
+   <h1 id="title">Modello ISO/OSI</h1>
+   <!-- Che cos'è? -->
+   <section id="Che-cosè">
+    <h3 class="title-p">Che cos'è?</h3>
+    <p>Il modello ISO/OSI in telecomunicazioni e in informatica, è uno standard stabilito nel 1984, nato per la necessità di avere un sistema per l’interconesione tra diversi sistemi di computer. Andando a creare così una serie di norme tecniche per legge per reti di calcolatori. Questo modello stabilisce per l’architettura logica di rete una struttura a strati composta da una pila di protocolli di comunicazione di rete suddivisa in 7 livelli, che eseguono tutte le funzionalità della rete.</p>
+    <div class="img">
+        <img src="./img/ISO-OSI.png" alt="Modello ISO/OSI">
+    </div>
+    <p>Il modello ISO/OSI è costituito da una pila di protocolli attraverso i quali viene ridotta la complessità implementativa di un sistema di comunicazione per il networking. In particolare ISO/OSI è costituito da livelli che definiscono e racchiudono in sé a livello logico uno o più aspetti fra loro correlati della comunicazione fra due nodi di una rete. Utilizzando un modello a livelli si può ridurre la complessità della comunicazione e assegnare il lavoro a diversi strati. Il modello a livelli permette inoltre la modularità degli strati, ovvero si potrebbero modificare le funzionalità di un singolo strato senza dover cambiare tutti gli altri. </p>
+   </section>
+   <!-- Perchè è nato il modello ISO/OSI? -->
+   <section id="perchè">
+    <h3 class="title-p">Perchè è nato il modello ISO/OSI?</h3>
+    <p>Negli anni 70 i dispositivi di rete erano costruiti da aziende diverse che realizzavano hardware e software con l’obiettivo di far comunicare esclusivamente i prodotti dell’azienda produttrice senza curarsi della comunicazione con sistemi diversi. Con il passare del tempo nacque la necessità di collegare tra loro dispositivi anche a media distanza, per esempio tra due sedi delle stessa azienda poste in città differenti. Il modello ISO/OSI facendo creò un protocollo di comunicazione che fosse in grado di far comunicare sistemi con caratteristiche diverse tra loro.</p>
+   </section>
+   <!-- Come funziona? -->
+   <section id="come">
+    <h3 class="title-p">Come funziona?</h3>
+    <p>L’informazione che un mittente vuole inviare a un destinatario passa da un livello superiore a quello inferiore e subisce man mano delle trasformazioni che consentono alla fine di trasmetterla su un canale fisico. Il principio che sta alla base delle architetture di rete che utilizzano il modello a strati, è l'incapsulamento. Questo processo si verifica nel momento in cui un Computer A vuole inviare dati Computer B, e l'informazione passa da un livello superiore a quello inferiore, e ogni livello aggiunge a quest'ultimo un pacchetto di dati del livello, si dice che il pacchetto viene incapsulato. Mentre nella ricezione del pacchetto aviene il decapsulamento, poichè ogni livello partendo da quello fisico rimuove le informazioni fino a estrarre il pacchetto originale.</p>
+    <div class="img">
+        <img src="./img/OSI-Model-invio-e-ricezione-1 1.png" alt="Modello ISO/OSI">
+    </div>
+   </section>
+   <section id="layer">
+    <h3 class="title-p">Livelli e cosa fanno</h3>
+    
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/application-illustration.svg" alt="application-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Application Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/presentation-illustration-1.png" alt="presentation-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Presentation Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/session-illustration.jpg" alt="session-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Session Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/transport-illustration-1.png" alt="transport-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Transport Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/network-illustration-1.png" alt="network-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Network Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/wi-fi.svg" alt="data-link-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Data Link Layer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="layer">
+        <div class="flex-container">
+            <div class="container">
+                <img src="./img/physical-illustration-1.png" alt="physical-illustration">
+            </div>
+            <div class="title-layer-container">
+                <h3 class="title-layer">Physical Layer</h3>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section id="tcp">
+    <h3 class="title-p">Modello TCP/IP</h3>
+    <p>TCP/IP è un protocollo di collegamento dati utilizzato in Internet per consentire a computer e altri dispositivi di inviare e ricevere dati, formato da due protocolli principali:</p>
+    <ol>
+        <li>IP (Internet Protocol);</li>
+        <li>TCP (Trasmission Control Protocol).</li>
+    </ol>
+    <p>IL TCP/IP si basa su 4 livelli a differenze dei 7 del modello ISO/OSI.</p>
+    <div class="img">
+        <img src="./img/ISO_OSI-VS-TCP_IP 1.png" alt="confronto iso/osi e tcp/ip">
+    </div>
+    <p>Il livello “Network”(3°) del ISO/OSI è in corrispondenza del livello “Internet”(2°) del TCP/IP, stessa cosa per il livello di Transporto. Nel TCP/IP non ci sono i livelli di presentazione e di sessione perciò le loro caratteristiche vengono implementate nel livello d’applicazione. Mentre i due livelli inferiori del ISO/OSI, ovvero Data Link e Physical, corrispondono al primo livello nel TCP/IP chiamato Network Access(Host - rete).</p>
+   </section>
+
+   <section id="differences">
+    <h3 class="title-p">Differenze tra TCP/IP e ISO/OSI</h3>
+    <ol>
+        <li>TCP/IP è un modello client-server, cioè quando il client richiede un servizio, viene fornito dal server. Considerando che, OSI è un modello concettuale.</li>
+        <li>TCP/IP è un protocollo standard utilizzato per ogni rete inclusa Internet, mentre OSI non è un protocollo ma un modello di riferimento utilizzato per comprendere e progettare l’architettura del sistema.</li>
+        <li>TCP/IP è un modello a quattro livelli, mentre OSI ha sette livelli.</li>
+        <li>TCP/IP segue l’approccio orizzontale. D’altra parte, il modello OSI supporta l’approccio verticale.</li>
+        <li>TCP/IP è tangibile, mentre OSI non lo è.</li>
+        <li>TCP/IP segue un approccio dall’alto verso il basso, mentre il modello OSI segue un approccio dal basso verso l’alto.</li>
+    </ol>
+   </section>
+
+   <script src="./script.js"></script>
+</body>
+</html>

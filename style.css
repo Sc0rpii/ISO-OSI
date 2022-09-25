@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); /**Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap'); /**Baloo */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap'); /**Rammetto One */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); /**Poppins*/
+
+:root{
+    --font-family-layer: "Rammetto One", cursive;
+    --font-family-title-page: "Baloo 2", cursive;
+    --font-family-title-p: "Poppins", sans-serief;
+    --font-family-text: "Roboto", sans-serief;
+    --bg-gradient: linear-gradient(117.39deg, #062A3F 1.97%, rgba(0, 255, 255, 0.3) 127.84%);
+    ---text-color: #eeeeee;
+    --box-shadow-layer: inset -7.8px -7.8px 3.46667px rgba(0, 0, 0, 0.05), inset 7.8px 7.8px 3.46667px rgba(0, 0, 0, 0.05);
+    --bg-button-layer: linear-gradient(0deg, rgba(166, 225, 250, 0.7), rgba(166, 225, 250, 0.7)), #1E1E1E;
+    --shadow-layer-text: 1px 1px 0px rgba(0,0,0,0.35), 0px -1px 0px rgba(0,0,0,0.25);/**Non funziona l'inner shadow*/
+    --color-button-link: #428BCA;
+    --bg-rectangle-img-layer: linear-gradient(136.74deg, #0A2472 0%, rgba(14, 107, 168, 0.3) 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: var(--bg-gradient) no-repeat center ;
+    color: var(---text-color);
+}
+
+#title{
+    text-align: center;
+    font-family: var(--font-family-title-page);
+    font-size: calc(25px + 2vw);
+    margin: 10px;
+}
+
+.title-p{
+    font-family: var(--font-family-title-p);
+    font-size: calc(12px + 1vw);
+}
+p{
+    font-family: var(--font-family-text);
+    font-size: calc(10px + 0.8vw);
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+section{
+    margin: 0 20px;
+}
+#Che-cosè .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#Che-cosè img{
+    width: 50vw;
+    margin: 15px 0;
+}
+#come .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#come img{
+    width: 50vw;
+    margin: 15px 0;
+}
+#layer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#layer .title-p{
+    margin: 30px 0 20px;
+    font-size: calc(15px + 1vw);
+}
+.layer{
+    width: 600px;
+    height: 150px;
+    background: var(--bg-button-layer);
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+.flex-container .title-layer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container .title-layer{
+    font-family: var(--font-family-layer);
+    font-size: calc(15px + 1.2vw);
+    text-align: center;
+}
+.flex-container .container{
+    width: 130px;
+    height: 130px;
+    background: var(--bg-rectangle-img-layer);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow-layer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 15px;
+}
+.flex-container .container img{
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+img[src="./img/wi-fi.svg"]{
+   object-fit: contain !important;
+}
+ol{
+    margin: 0 20px;
+}
+ol li::marker{
+    font-weight: 900;
+    color: #00297a; 
+}
+ol li{
+    font-family: var(--font-family-text);
+    font-size: calc(5px + 1.1vw);
+}
+#tcp .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tcp .img img{
+    width: 50%;
+}
+#differences{
+    margin-bottom: 50px;
+}
