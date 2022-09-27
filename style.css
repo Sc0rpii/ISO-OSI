@@ -24,6 +24,7 @@
 body{
     background: var(--bg-gradient) no-repeat center;
     color: var(---text-color);
+    min-height: 100vh;
 }
 
 #title{
@@ -84,10 +85,13 @@ section{
     margin: 10px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .flex-container{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .flex-container .title-layer-container{
     width: 100%;
@@ -160,7 +164,7 @@ ul li:before {
     vertical-align:middle;
     line-height:20px;
 }
-/**Application layer*/
+/**Layer Title*/
 #layer-title{
     display: flex;
     justify-content: center;
@@ -198,9 +202,13 @@ a{
     align-items: center;
     margin: 20px 15px;
 }
+/**Application Layer*/
 #example .img{
     display: flex;
     justify-content: center;
+}
+#example .img img{
+    width: 70%;
 }
 /**Presentation layer*/
 .double-img{
@@ -212,9 +220,231 @@ a{
 /**Session Layer*/
 ol li::marker{
     color: #eeeeee;
+    font-weight: 900;
 }
 #end .img {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+}
+/**Transport Layer*/
+/* #protocol {
+    margin: ;
+} */
+/**Netwrok Layer*/
+#action-network .img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#action-network .img img{
+    width: 50vw;
+}
+/**Data Link Layer*/
+#task .img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#task .img img{
+    width: 40vw;
+}
+#protocol{
+    margin: 30px 15px 20px;
+}
+/**Physical Layer*/
+#title-section{
+    margin: 20px;
+}
+#charcter ul li::before{
+   content: " ";
+}
+#charcter .medium{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+#charcter .medium img{
+    border-radius: 5%;
+    width: 30vw;
+}
+#charcter .img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#charcter .img img{
+    width: 35vw;
+}
+#segnali li{
+   margin-top: 10vh;
+}
+#segnali .img{
+    margin-bottom: 50px
+}
+img[src="../img/sistema-comunicazione.png"]{
+    margin: 30px 0;
+}
+/**Animation*/
+#title{
+    transition: ease-in-out;
+    animation: slide_top 0.5s linear forwards;
+}
+.layer{
+    transition: ease-in;
+    animation: slide_top 0.5s linear forwards;
+}
+.container{
+    transition: ease-in;
+    animation: slide_top 1s linear forwards;
+}
+h3{
+    transition: ease-in-out;
+    animation: slide_left 0.5s linear forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+p{
+    transition: ease-in-out;
+    animation: slide_left 0.5s linear forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+img{
+    transition: ease-in-out;
+    animation: slide_right 0.5s linear forwards;
+    opacity: 0;
+    animation-delay: 1.55s;
+}
+ul li,
+ol,li{
+    transition: ease-in-out;
+    animation: slide_left 0.5s linear forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+h2 a{
+    transition: ease-in-out;
+    animation: slide_left 0.5s linear forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.button{
+    transition: ease-in-out;
+    animation: slide_bottom 2s linear forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+@keyframes slide_top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_bottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_left{
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_right{
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+/**Mobile*/
+@media screen and (max-width: 600px) {
+    #layer .layer{
+        width: 70vw;
+        height: 18vw;
+    }
+    #layer  .container{
+        width: 20vw;
+        height: 15vw;
+        margin: 2vw;
+    }
+    #layer  .container img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .flex-container .title-layer{
+        font-size: calc(12px + 1vw);
+    }
+    .img img{
+        width: 80vw !important;
+    }
+    ol li{
+        font-size: calc(10px + 0.8vw);
+    }
+    ul li{
+        font-size: calc(10px + 0.8vw);
+    }
+    .title-p{
+        font-size: calc(10px + 1.6vw);
+    }
+    .title-section{
+        font-size: calc(10px + 2vw);
+    }
+    li h3{
+        font-size: calc(10px + 1.6vw);
+    }
+    /**Layer Title*/
+    #layer-title .layer{
+        width: 80vw;
+        height: 25vw;
+    }
+    #layer-title  .container{
+        width: 40% !important;
+        height: 90% !important;
+        margin: 2vw;
+    }
+    #layer-title  .container img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    h2{
+        font-size: calc(15px + 0.8vw);
+    }
+    ul li:before {
+        font-size: calc(15px + 15vw);
+    }
+    /**Presentation Layer*/
+    .double-img img{
+        width: 35vw !important;
+    }
+    /**Physical*/
+    #charcter .text{
+        float: left;
+    }
+    #charcter .medium .img img{
+        border-radius: 5%;
+        width: 40vw !important;
+    }
 }

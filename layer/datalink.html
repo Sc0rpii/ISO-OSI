@@ -22,6 +22,47 @@
         </div>
     </section>
     <h2><a href="../index.html"> &lt; Home</a></h2>
-    
+    <section id="introduction">
+        <p>Il livello di collegamento dati si occupa di gestire il collegamento da un pc all’altro appartenenti alla stessa LAN, utilizzando un canale fisico a velocità elevata e con basso tasso d’errore. Altra funzione principale di questo livello e' quella di recuperare gli errori trasmissivi: di solito questo avviene mediante tecniche di ritrasmissione automatica dei dati che sono stati ricevuti corrotti. Questo livello in trasmissione riceve pacchetti dati dal livello di rete e forma i frame che vengono passati al sottostante livello fisico con l'obiettivo di permettere il trasferimento affidabile dei dati attraverso il sottostante canale.</p>
+    </section>
+    <section id="task">
+        <ol>
+            <li><h3>Identificare i nodi connessi</h3></li>
+            <p>Le interfacce di rete NIC (Network Interface Controller/Card) dispongono di un numero cablato (48 bit) detto MAC address, non modificabile, univoco in tutto il mondo, viene impiegato per identificare le entita'.</p>
+            <li><h3>Controllare gli errori</h3></li>
+            <p>Aggiunge dal livello di rete una sequenza di bit che è usata in ricezione per valutare trasmissione del pachetto. Se il bit calcolato è diverso dal bit ricevuto il destinatario individua un errore.</p>
+            <li><h3>Correggere gli errori mediante ritrasmissione</h3></li>
+            <p>I pacchetti inviati sono tutti numerati. Per ogni pacchetto ricevuto, il destinatario invia al mittente un segnale di conferma contenente lo stato della trasmissione (positivo o negativo) e il numero del pacchetto associato. Il mittente deve ripetere l'invio dei pacchetti in corrispondenza dei quali non ha ricevuto il segnale di conferma in un intervallo di tempo prestabilito. Puo' capitare che, per via dei reinvii dovuti a ritardi nella ricezione del segnale di conferma, il destinatario riceva lo stesso pacchetto piu' volte: in questo caso le copie del pacchetto verranno scartate.</p>
+            <li><h3> Definire la connessione logica LLC (Logical Link Control)</h3></li>
+            <p>L' LLC definisce e controlla il collegamento logico tra i nodi di una rete. Questo sottolivello fornisce i servizi al Network Layer che nascondono i dettagli dovuti alle diverse tecnologie fisiche utilizzate. I protocolli PPP e HDLC fanno parte di questo sottolivello. I protocolli di sottolivello LLC che forniscono il servizio di conferma o di garanzia di ricezione dei dati devono prevedere messaggi di conferma avvenuta ricezione.  Il trasmittente può attendere il riscontro di ciascun messaggio prima di trasmettere il successivo, oppure può continuare a trasmettere fino al raggiungimento di un numero massimo di messaggi non ancora confermati dal ricevente.</p>
+            <li><h3>Controllare il flusso</h3></li>
+            <p>Sincronizzare il dispositivo fisico piu' veloce portandolo alla velocita' di quello piu' lento. In questo modo si evita che un mittente troppo veloce tenda a trasmettere pacchetti in quantita' superiore a quella supportata dal ricevente, evitando che quest'ultimo risulti completamente sopraffatto dal sovraccarico di lavoro (buffer overflow).</p>
+            <li><h3>Accesso condiviso al canale MAC (Medium Access Control)</h3></li>
+            <p>Disciplina l'accesso multiplo di piu' nodi ad un canale di comunicazione condiviso (multiplazione) evitando o gestendo l'occorrenza di collisioni.</p>
+            <li><h3>DataFraming</h3></li>
+            <p>Il secondo livello forma dei pacchetti dati, detti frame o trama, da far viaggiare lungo la dorsale di comunicazione. Il frame e' l'unita' dati fondamentale di questo livello. Il livello DataLink incapsula il pacchetto proveniente dal livello superiore in un nuovo pacchetto detto frame al quale aggiunge un header e una coda.</p>
+            <div class="img">
+                <img src="../img/dataframing.jpg" alt="">
+            </div>
+            <li><h3>Multipazione</h3></li>
+            <p>La multiplazione è il meccanismo o tecnica di trasmissione per cui più canali trasmissivi in ingresso condividono la stessa capacità trasmissiva disponibile in uscita ovvero combinando più segnali analogici o flussi di dati digitali in un solo segnale  trasmesso in uscita su uno stesso collegamento fisico. Nelle reti la connessione fisica tra due elaboratori deve essere utilizzata in modo tale che piu' applicazioni possono contemporaneamente trasmettere informazioni sullo stesso canale.</p>
+        </ol>
+    </section>
+    <section id="protocol">
+        <h3 class="title-p">Protocolli</h3>
+        <ul>
+            <li>Ethernet;</li>
+            <li>Token Ring;</li>
+            <li>FDDI;</li>
+            <li>IEEE 802.11 (WLAN);</li>
+            <li>ATM;</li>
+            <li>TCP/IP's Serial Link Interface Protocol (SLIP)</li>
+            <li>Point-To-Point Protocol (PPP).</li>
+        </ul>
+    </section>
+    <div class="button">
+        <h2><a href="./network.html"> &lt; Pre.</a></h2>
+        <h2><a href="./physical.html">Succ.></a></h2>
+    </div>
 </body>
 </html>

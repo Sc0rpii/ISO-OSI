@@ -31,7 +31,23 @@
             <p>Inoltro (forwarding), ovvero ricevere un pacchetto su una porta, immagazzinarlo e ritrasmetterlo su un'altra. Questa funzione è presente in tutti i nodi della rete e può comportare l'utilizzo di protocolli di livello collegamento differenti</p>
             <li><h3>Frammentazione e riassemblaggio</h3></li>
             <p>l livello di rete deve inviare messaggi al livello sottostante Datalink. Alcune tecnologie associate al livello Datalink hanno dei limiti sulla lunghezza del frame (Maximum Transmission Unit) che possono spedire. Se un pacchetto ricevuto ha una dimensione eccessiva per la rete su cui deve essere trasmesso, il livello di rete lo divide in frammenti e, in maniera complementare, si occupa di riassemblare i frammenti ricevuti al momento della consegna.</p>
+            <li><h3>Routing</h3></li>
+            <p>Il livello di rete determina il percorso ideale per la trasmissione dei dati attraverso la rete a partire dall'indirizzo IP del destinatario. Nella maggior parte dei casi, questa funzione viene svolta dinamicamente tramite appositi algoritmi, che utilizzano le informazioni provenienti dai protocolli di routing sulle condizioni della rete, le tabelle di instradamento, la priorità del servizio e altri elementi secondari. Gli algoritmi di Instradamento possono essere di tipo Statico che basano le proprie scelte su informazioni memorizzate in un archivio che viene aggiornato manualmente o di tipo Dinamico che utilizzano misure e stime del traffico sulla rete, in modo da instradare i dati sui percorsi che di volta in volta sembrano piu' promettenti.Alcuni protocolli di rete forniscono un servizio di gestione delle connessioni, ovvero richiedono che venga stabilito un canale di comunicazione fisso e dedicato prima che due host possano iniziare a scambiarsi dati; altri protocolli invece trasportano semplicemente i datagrammi a destinazione (IP, IPX) senza connessione. Il più importante protocollo legato al Network Layer è IP. Anche il principale protocollo diagnostico ICMP (Internet Control Message Protocol), utilizzato insieme ad IP, appartiene a questo livello.</p>
+            <div class="img">
+                <img src="../img/routing.png" alt="">
+            </div>
+            <li><h3>Datagram Encapsulation</h3></li>
+            <p>I messaggi ricevuti dal livello superiore vengono incapsulati all’interno di un’unità dati detta datagrams alla quale viene messa l’intestazione relativa al livello di rete (Network Layer Header).</p>
+            <div class="img">
+                <img src="../img/encapsulation.png" alt="">
+            </div>
+            <li><h3>Error Handling and Diagnostics</h3></li>
+            <p>Speciali protocolli sono utilizzati a questo livello per permettere ai devices connessi logicamente di scambiarsi informazioni relative allo stato dei nodi o dei devices stessi.</p>
         </ol>
     </section>
+    <div class="button">
+        <h2><a href="./transport.html"> &lt; Pre.</a></h2>
+        <h2><a href="./datalink.html">Succ.></a></h2>
+    </div>
 </body>
 </html>

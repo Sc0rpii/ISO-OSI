@@ -21,5 +21,57 @@
         </div>
     </section>
     <h2><a href="../index.html"> &lt; Home</a></h2>
+    <section id="introduction">
+        <p>L’obbiettivo del livello fisico è quello di gestire il mezzo trasmissivo che può essere un cavo coassiale, una fibra ottica, dei connettori o dei doppini telefonici tramite il quale avviene la trasmissione delle informazioni. Inoltre, il livello fisico ha la funzione di mettere in comunicazione l'elaboratore al canale di comunicazione si occupa di tutte le problematiche che permettono la corretta trasmissione del bit dal mittente al destinatario.</p>
+    </section>
+    <h3 id="title-section" class="title-p">Il livello 1 ha il compito di definire:</h3>
+    <section id="charcter">
+        <ol>
+            <li><h3>Le caratteristiche degli apparati trasmissivi </h3></li>
+            <p>Una rete è costituita da un insieme di computer e nodi interconessi tra loro, in grado di condividere sia le risorse hardware, che le risorse software. I mezzi trasmisivi si dividono principalmente in guidate e non guidati. Un esempio di mezzi trasmissivi guidati sono i doppini telefonici composti da 8 cavi di rame intrecciati a coppie tra di loro.Questi tipi di cavi sono di tipo STP (Shielded Twisted Pair) oppure UTP (Unshielded Twisted Pair) o anche FTP (Fooiled Twisted Pair).Un esempio di mezzo trasmissivo non guidato è l'etere.</p>
+            <div class="medium">
+                <div class="text">
+                    <h3 class="title-p">Mezzi trasmissivi:</h3>
+                   <ul>
+                        <li>elettrici: doppini telefonici o cavi coassiali</li>
+                        <li>ottici: fibre ottiche o laser</li>
+                        <li>wirless: onde elettromagnetiche</li>
+                   </ul>
+                </div>
+                <div class="img">
+                    <img src="../img/transporto.png" alt="mezzi trasmissivi">
+                </div>
+            </div>
+            <li><h3>La tensione scelta per rappresentare i bit trasmessi sul mezzo fisico</h3></li>
+            <p>Il livello fisico rappresenta i bit, in cui è codificata l'informazione, in un segnale adatto al mezzo trasmissivo. Per esempio, se il mezzo trasmissivo è un doppino i bit verranno rappresentati con determinati valori di tensione, in particolare il bit 1 viene rappresentato da un valore di tensione "alto" mentre il bit 0 viene rappresentato da un valore di tensione "basso". Se il mezzo trasmissivo sarà una fibra ottica, i bit verranno rappresentati attraverso impulsi luminosi; se poi il mezzo, è l'etere il segnale sarà un'onda avente una frequenza trasmessa da un antenna.</p>
+            <li><h3>Sincronia tra mittenete e destinatario</h3></li>
+            <p>I dati da trasmettere sul canale devono essere trasformati in un segnale con la codifica di linea; essa serve ad adattare il segnale da inviare al particolare mezzo trasmissivo ed, inoltre, consente di mantenere la sincronizzazione tra mittente e ricevitore.
+            Il segnale di sincronismo è il segnale di clock che sincronizza i clock delle schede di rete delle entità connesse alla rete. L'unico problema di questa codifica è quello che a fronte di una serie lunga di bit uguali ha difficoltà a mantenere il sincronismo tra mittente e ricevitore.</p>
+            <li><h3>La tipologia dei segnali trasmessi</h3></li>
+            <p>A seconda del tipo di canale utilizzato il segnale trasmesso può essere:</p>
+            <ul id="segnali">
+                <li>Segnale digitale:</li>
+                <div class="img">
+                    <img src="../img/segnale-digitale.png" alt="segnale digitale">
+                </div>
+                <li>Segnale luminoso:</li>
+                <div class="img">
+                    <img src="../img/segnale-ottico.png" alt="segnale ottico">
+                </div>
+                <li>Segnale radio:</li>
+                <div class="img">
+                    <img src="../img/onde-elettromagnetiche.png" alt="onde radio">
+                </div>
+            </ul>
+            <li><h3>Il verso in cui avverrà la comunicazione</h3></li>
+            <p>La comunicazione può avvenire principalmente in due direzioni: in un verso, detto <b>simplex</b>, oppure in più versi, detto<b>duplex</b>. Una comunicazione di tipo simplex è una comunicazione dove le informazioni possono viaggiare soltanto in un solo verso. Una comunicazione di tipo duplex le informazioni viaggiano in entrambe le direzioni.Una comunicazione di tipo duplex può avvenire in due modi: le informazioni viaggiano in entrambe le direzioni ma che viaggiano in un senso alla volta, così facendo la comunicazione è di tipo half-duplex; oppure le informazioni possono viaggiare in entrambe le direzioni in contemporanea, così la comunicazione è di tipo full-duplex.</p>
+            <div class="img">
+                <img src="../img/sistema-comunicazione.png" alt="sistema di comunicazione">
+            </div>
+        </ol>
+    </section>
+    
+    <div class="button"><h2><a href="./network.html"> &lt; Pre.</a></h2></div>
+    
 </body>
 </html>
