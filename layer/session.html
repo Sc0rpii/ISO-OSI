@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Session Layer</title>
+</head>
+<body>
+    <section id="layer-title">
+        <div class="layer">
+            <div class="flex-container">
+                <div class="container">
+                    <img src="../img/session-illustration.jpg" alt="session-illustration">
+                </div>
+                <div class="title-layer-container">
+                    <h3 class="title-layer">Session Layer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2><a href="../index.html"> &lt; Home</a></h2>
+    <section id="introduction">
+        <p>Il livello di sessione è il livello mediante il quale gli utenti possono stabilire dei collegamenti logici o sessioni di lavoro che consentono il corretto trasferimento di informazioni. In particolare, in questo livello vengono definite le regole per aprire e chiudere una connessione logica. Il compito principale e' quindi quello di coordinare il dialogo tra utenti basandosi sul servizio offerto dal livello di trasporto. In pratica, lo strato di sessione apre una connessione logica tra il nodo e la rete.</p>
+    </section>
+    <section id="tasks">
+        <h3 class="title-p">Esempio</h3>
+        <ol>
+            <li><h3>Definizione della session</h3></li>
+            <p>Il livello di sessione si occupa di attivare la connessione tra due stazioni, mantenerla per tutta la durata del trasferimento dei dati e di terminarla a fine trasmissione. L’intero processo è chiamato appunto sessione; una sessione deve essere individuata, eventualmente interrotta e poi ripresa in base alla necessita'.</p>
+            <li><h3>Sincronizzazione</h3></li>
+            <p>Permette ai processi coinvolti nella comunicazione di inserire dei checkpoint in un flusso dati; cio' permette di dividere (logicamente) il flusso in unita' piu' piccole in modo che, in caso di interruzione della sessione, non sia necessario inviare nuovamente tutto il flusso dati ma solo dall' ultimo checkpoint in poi.</p>
+            <li><h3>Possibilità di intervento su dialogo tra pari;</h3></li>
+            <li><h3>Se ci sono errori nella connessione si ripristina la sessione (roll-back), utilizzando punti di sync;</h3></li>
+            <li><h3>Gestione attività(start,end,restart,delete,ecc...);</h3></li>
+            <li><h3>Eccezione previste  e notifiche.</h3></li>
+        </ol>
+    </section>
+
+    <section id="fase">
+        <h3 class="title-p">Fasi di una sessione:</h3>
+        <ol>
+            <li><h3>Avvio e apertura</h3></li>
+            <p>Si avvia uno scambio di informazioni tra l'utente che intende utilizzare un servizio e il server che possiede tale servizio.</p>
+            <li><h3>Lavoro o apertura</h3></li>
+            <p>Il colloquio prosegue, sempre con lo scambio delle informazioni di sessione. Le tipiche applicazioni per il web prevedono spesso che nell'arco della sessione parte di queste informazioni possano essere variate o aggiunte di nuove.</p>
+            <li><h3>Chiusura</h3></li>
+            <p>Su richiesta dell'utente o del client, il server cancella le informazioni di sessione. In assenza di una specifica richiesta, nella gran parte delle applicazioni è prevista la chiusura, o la fine automatica della sessione, dopo un certo tempo in cui l'utente/client non invia alcun messaggio.</p>
+        </ol>
+    </section>
+
+    <section id="end">
+        <div class="img">
+            <img src="../img/Session.png" alt="confronto iso/osi e tcp/ip">
+        </div>
+        <div class="button">
+            <h2><a href="../index.html"> &lt; Home</a></h2>
+            <h2><a href="./transport.html">Succ.></a></h2>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Transport Layer</title>
+</head>
+<body>
+    <section id="layer-title">
+        <div class="layer">
+            <div class="flex-container">
+                <div class="container">
+                    <img src="../img/transport-illustration-1.png" alt="transport-illustration">
+                </div>
+                <div class="title-layer-container">
+                    <h3 class="title-layer">Transport Layer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2><a href="../index.html"> &lt; Home</a></h2>
+    <section id="introduction">
+        <p>Il livello di trasporto si occupa di fornire servizi al livello di sessione (In ricezione) e per farlo raccoglie i dati dal livello di rete. Lo scopo del livello di trasporto è fornire un canale logico e affidabile di comunicazione end-to-end per “pacchetti”.  Si occupa di rimediare alle mancanze delle funzionalità del trasferimento in termini di affidabilità implementando le suddette funzioni come garanzie sul trasporto stesso cioè chiudendo il cerchio su tutto ciò che il trasporto in toto dovrebbe fare e garantire.</p>
+    </section>
+    <section id="service">
+        <h3 class="title-p">Servizi:</h3>
+        <ol>
+            <li><h3>Servizio orientato alla connessione</h3></li>
+            <p>Il livello di trasporto si incarica di realizzare una connessione persistente del tipo necessario al livello di sessione per ogni connessione richiesta, che viene poi chiusa quando non è piu' necessaria.</p>
+            <li><h3>Corretto ordine di consegna</h3></li>
+            <p>Poiché i pacchetti possono seguire percorsi diversi all'interno della rete, non c'è alcuna garanzia che i dati vengano recapitati nello stesso ordine in cui sono stati inviati. Il livello di trasporto verifica che i pacchetti vengano riordinati nella giusta sequenza in ricezione prima di passarli al livello superiore.</p>
+            <li><h3>Controllo di flusso</h3></li>
+            <p>Se gli host coinvolti nella comunicazione hanno velocita' di trasmissione differenti, il livello di trasporto si occupa di evitare errori di over-running. Può capitare che un pc piu' veloce "inondi" di dati uno più lento portando alla perdita di pacchetti. Mediante il controllo di flusso, un host in "difficolta' " puo' chiedere di abbassare il tasso di trasmissione in modo da poter gestire le informazioni in ingresso.</p>
+            <li><h3>Controllo di congestione</h3></li>
+            <p>Il protocollo riconosce uno stato di congestione della rete e adatta di conseguenza la velocita' di trasmissione.</p>
+            <li><h3>Orientamento al byte</h3></li>
+            <p>Invece che gestire i dati in base ai pacchetti, viene fornita la possibilità di vedere la comunicazione come uno stream di byte, in modo da semplificarne l'utilizzo.</p>
+            <li><h3>Multiplazione</h3></li>
+            <p>Il protocollo permette di stabilire diverse connessioni contemporanee tra gli stessi due host, tipicamente utilizzando l'astrazione delle porte. Nell'uso comune diversi servizi utilizzano porte logiche di comunicazione diverse.</p>
+        </ol>
+    </section>
+    <section id="protocol">
+        <h3 class="title-p">Protocolli</h3>
+        <p>Nello stack protocollare Internet, i protocolli di trasporto più utilizzati sono <b>TCP</b>(Trasmission Control Protocol) e <b>UDP</b>(User Datagram Protocol).<b>TCP</b>è il più complicato fra i due e fornisce un servizio end-to-end orientato alla connessione e al byte, con verifica del corretto ordine di consegna, controllo di errore e di flusso.<b>UDP</b>, invece, è un protocollo più snello e fornisce un servizio a datagrammi, senza connessione, con un meccanismo di riduzione degli errori e con porte multiple.</p>
+    </section>
+    <div class="button">
+        <h2><a href="../index.html"> &lt; Home</a></h2>
+        <h2><a href="./network.html+">Succ.></a></h2>
+    </div>
+</body>
+</html>

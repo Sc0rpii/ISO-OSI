@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Network Layer</title>
+</head>
+<body>
+    <section id="layer-title">
+        <div class="layer">
+            <div class="flex-container">
+                <div class="container">
+                    <img src="../img/network-illustration-1.png" alt="network-illustration">
+                </div>
+                <div class="title-layer-container">
+                    <h3 class="title-layer">Network Layer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2><a href="../index.html"> &lt; Home</a></h2>
+    <section id="introduction">
+        <p>Il livello di rete si occupa della traduzione del indirizzo logico dell’host destinatario in indirizzo fisico, quindi stabilisce il miglior percorso possibile fra due computer di una rete. Questo percorso, attraverso altri nodi della rete, può essere definito staticamente, oppure può variare dinamicamente, cioè invia pacchetti su percorsi diversi in base alla necessità. Questo livello si occupa di gestire la comunicazione controllando il flusso dei dati al fine di evitare la Congestione Della Rete. I dati ricevuti dal livello superiore sono organizzati in pacchetti o datagrammi, che contengono il Network Header con l’indirizzo logico dell' host sorgente e dell' host destinatario. Provvede inoltre alla commutazione dei singoli pacchetti che compongono il messaggio e ciascun pacchetto viene fornito di un numero progressivo (che permette la ricostruzione dell'intero messaggio) e determina se il cammino deve essere lo stesso per tutti i pacchetti, oppure se i pacchetti possono seguire cammini diversi. </p>
+    </section>
+    <section id="action-network">
+        <h3 class="title-p">Cosa fa?</h3>
+        <ol>
+            <li><h3>Inoltro(forwarding)</h3></li>
+            <p>Inoltro (forwarding), ovvero ricevere un pacchetto su una porta, immagazzinarlo e ritrasmetterlo su un'altra. Questa funzione è presente in tutti i nodi della rete e può comportare l'utilizzo di protocolli di livello collegamento differenti</p>
+            <li><h3>Frammentazione e riassemblaggio</h3></li>
+            <p>l livello di rete deve inviare messaggi al livello sottostante Datalink. Alcune tecnologie associate al livello Datalink hanno dei limiti sulla lunghezza del frame (Maximum Transmission Unit) che possono spedire. Se un pacchetto ricevuto ha una dimensione eccessiva per la rete su cui deve essere trasmesso, il livello di rete lo divide in frammenti e, in maniera complementare, si occupa di riassemblare i frammenti ricevuti al momento della consegna.</p>
+        </ol>
+    </section>
+</body>
+</html>
